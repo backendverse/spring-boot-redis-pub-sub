@@ -40,6 +40,32 @@ With **Redis Pub/Sub**, you can:
 
 ---
 
+## ⚙️ Project Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/backendverse/spring-boot-redis-pub-sub
+   cd spring-boot-redis
+   ```
+
+2. ## 🐳 Run with Docker Compose (Recommended)
+
+If you don’t want to install Redis manually, you can use **Docker Compose**.
+
+1. Start containers:
+
+   ```bash
+   docker compose up -d
+   ```
+
+2. Check running containers:
+
+   ```bash
+   docker ps
+   ```
+---
+
 ## 🔗 Example APIs
 
 ### 1️⃣ Publish Message
