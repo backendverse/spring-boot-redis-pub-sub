@@ -46,7 +46,7 @@ With **Redis Pub/Sub**, you can:
 
    ```bash
    git clone https://github.com/backendverse/spring-boot-redis-pub-sub
-   cd spring-boot-redis
+   cd spring-boot-redis-pub-sub
    ```
 
 2. ## 🐳 Run with Docker Compose (Recommended)
