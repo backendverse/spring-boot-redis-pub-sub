@@ -48,22 +48,51 @@ With **Redis Pub/Sub**, you can:
    git clone https://github.com/backendverse/spring-boot-redis-pub-sub
    cd spring-boot-redis-pub-sub
    ```
+---
 
-2. ## 🐳 Run with Docker Compose (Recommended)
+## 🐳 Run with Docker Compose (Recommended)
 
 If you don’t want to install Redis manually, you can use **Docker Compose**.
 
-1. Start containers:
+### 1️⃣ Start Redis Container
 
-   ```bash
-   docker compose up -d
-   ```
+```bash
+docker compose up -d
+```
 
-2. Check running containers:
+### 2️⃣ Verify Container is Running
 
-   ```bash
-   docker ps
-   ```
+```bash
+docker ps
+```
+
+👉 You should see a container named **redis**.
+
+### 3️⃣ Connect to Redis CLI inside the Container
+
+```bash
+docker exec -it <container_id> bash
+redis-cli
+```
+
+✅ Now you are inside Redis! 🎉
+
+### 4️⃣ Subscribe to Topics using Pattern Subscriber
+
+```bash
+PSUBSCRIBE live*
+```
+
+👉 Example: `live*` → will subscribe to all channels like **`live-news`**, **`live-sports`**, **`live-weather`**.
+
+### 5️⃣ Publish Data to a Topic
+
+```bash
+PUBLISH live-sports "Latest Update: Cricket is awesome!"
+```
+
+⚡ Here, **`live-sports` is your CHANNEL name** — you can replace it with any channel (e.g., `live-news`, `live-weather`).
+
 ---
 
 ## 🔗 Example APIs
