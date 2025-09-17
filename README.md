@@ -1,29 +1,33 @@
-# Pub/Sub Using Redis with Spring Boot 🚀 | Real-Time Messaging Explained 🌿 Hindi Tutorial  
+# Redis Pub/Sub Pattern Subscription Explained 🔥 | Subscribe Multiple Channels in Spring Boot 🌿 Hindi Tutorial  
 
 Welcome to **[Backend Verse](https://www.youtube.com/@BackendVerse)**! 🎥  
-In this tutorial, we explore how to implement **Redis Pub/Sub with Spring Boot** to enable **real-time communication** between services and applications. 🚀
+In this tutorial, we explore how to implement **Redis Pub/Sub with Star Pattern Using Spring Boot** to enable **real-time communication** between services and applications. 🚀
 ---
 
 ## ▶ Watch the Tutorial
 
-📺 **[Pub/Sub Using Redis with Spring Boot 🚀 | Real-Time Messaging Explained 🌿 Hindi Tutorial](https://youtu.be/Vj7elNiqyDw)**
+📺 **[Redis Pub/Sub Pattern Subscription Explained 🔥 | Subscribe Multiple Channels in Spring Boot 🌿 Hindi Tutorial](https://youtu.be/uPMVIEfpjzo)**
 
 ---
 
 ## 📝 What You’ll Learn
-📌 What is Pub/Sub in Redis  
-⚡ How Pub/Sub works internally  
-🔑 Implementing Pub/Sub with Spring Boot  
-💡 Real-world use case: Chat App / Notifications  
+
+📌 What is Pub/Sub in Redis
+⚡ How Pub/Sub works internally
+🔑 Implementing Pub/Sub with Spring Boot
+🌟 Using **Pattern Subscription (`PSUBSCRIBE`)** for multiple channels
+💡 Real-world use case: Live News & Sports Updates
 ✅ Best practices for scalable event-driven apps
 
 ---
 
 ## 🎯 Why Watch This Video?
-With **Redis Pub/Sub**, you can:  
-✔️ Build real-time chat and notification systems  
-✔️ Avoid heavy polling & improve performance  
-✔️ Scale microservices communication easily  
+
+With **Redis Pub/Sub (Pattern Subscription)**, you can:
+✔️ Subscribe to multiple channels with one wildcard (e.g., `live*`)
+✔️ Build real-time apps like news, sports & notifications 🚀
+✔️ Avoid multiple blocking subscriptions & improve performance
+✔️ Scale event-driven microservices communication easily
 ✔️ Integrate seamlessly with Spring Boot
 
 ---
@@ -47,6 +51,7 @@ With **Redis Pub/Sub**, you can:
    ```bash
    git clone https://github.com/backendverse/spring-boot-redis-pub-sub
    cd spring-boot-redis-pub-sub
+   git checkout redisPatternSubscriber
    ```
 ---
 
